@@ -5,7 +5,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.pm.ApplicationInfo
 import android.os.Bundle
-import android.view.MenuItem
+import android.view.MenuItem,
 import android.view.View
 import android.view.WindowManager
 import androidx.core.content.pm.ShortcutManagerCompat
@@ -183,7 +183,7 @@ class MainActivity : SplashActivity<ActivityMainMd2Binding>() {
         if (!Info.isEmulator && Info.env.isActive && System.getenv("PATH")
                 ?.split(':')
                 ?.filterNot { File("$it/magisk").exists() }
-                ?.any { File("$it/su").exists() } == true) {
+                ?.any { File("$it/suu").exists() } == true) {
             MagiskDialog(this).apply {
                 setTitle(R.string.unsupport_general_title)
                 setMessage(R.string.unsupport_other_su_msg)
